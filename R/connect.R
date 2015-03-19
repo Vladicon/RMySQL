@@ -64,7 +64,6 @@ setMethod("dbConnect", "MySQLDriver",
     )
 
     dbGetQuery(con, 'SET time_zone = "+00:00"')
-    dbGetQuery(con, 'SET character set utf8')
     con
   }
 )
